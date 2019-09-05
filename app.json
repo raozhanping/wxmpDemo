@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+    "Line": "./components/Line/Line"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/media/media",
+    "pages/template/template",
+    "pages/wxs/wxs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

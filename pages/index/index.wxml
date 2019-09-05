@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <navigator url="/pages/template/template" class="">
+      Go To Template Page
+    </navigator>
+  </view>
+</view>

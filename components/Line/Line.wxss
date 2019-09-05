@@ -1,0 +1,5 @@
+/* components/Line/Line.wxss */
+.line {
+  border-top: 5rpx solid burlywood;
+  margin: 10rpx 5rpx;
+}

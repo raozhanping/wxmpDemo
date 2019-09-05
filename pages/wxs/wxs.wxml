@@ -1,0 +1,12 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<Line />
+<!-- <wxs src="./demo.wxs" module="demo"></wxs> -->
+<template name="wxs1">
+  <view>{{demo.name}}</view>
+  <view>template: wxs1</view>
+</template>
+<template is="wxs1" data="{{demo}}"></template>
+<Line />
+<component></component>
+<Line />

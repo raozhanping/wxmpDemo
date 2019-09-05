@@ -1,0 +1,31 @@
+<!--pages/template/template.wxml-->
+<view class="container">
+  <template name="a">
+    <!-- template name -->
+    <view>template a</view>
+
+    <!-- list render -->
+    <view wx:for="{{listArr}}" wx:key="idx" wx:for-index="idx" wx:for-item="itemName">
+      <text>list-{{idx}}: {{itemName}}</text>
+      <text>{{gVar}}</text>
+    </view>
+
+    <!-- condition render -->
+    <view wx:if="{{length > 5}}"> if: 1 </view>
+    <view wx:elif="{{length > 2}}"> elif: 2 </view>
+    <view wx:else> else:3 </view>
+
+    <!-- template -->
+    <template name="b">
+      <view>bbbbbb</view>
+      <view>{{gVar}}</view>
+    </template>
+    <template is="b"></template>
+  </template>
+  <template name="c">
+    <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+    <view>{{dataA}}</view>
+    <view>{{b}}111</view>
+  </template>
+  <template is="c" data="{{...dataA}}" se-template="seTemplate" ></template>
+</view>
